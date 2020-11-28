@@ -125,11 +125,11 @@ if __name__ == '__main__':
                     speak('What should I say? ')
                     content = myCommand()
 
-                    server = smtplib.SMTP('Victorarbiters@gmail.com', 587)
+                    server = smtplib.SMTP('YOUR_EMAIL', 587)
                     server.ehlo()
                     server.starttls()
-                    server.login("Victorarbiter", 'PaulinaR05')
-                    server.sendmail('Victorarbiter', "Victorarbiter", content)
+                    server.login("YOUR_USERNAME", 'YOUR_PASSWORD')
+                    server.sendmail('SUBJECT', "RECIPIENT", content)
                     server.close()
                     speak('Email sent!')
 
